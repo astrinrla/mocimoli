@@ -3,6 +3,7 @@ layout: page
 title: Astri's Blog
 subtitle: Everything all about cat
 use-site-title: true
+netlify-identify: true
 ---
 
 <div class="posts-list">
@@ -70,3 +71,15 @@ use-site-title: true
   {% endif %}
 </ul>
 {% endif %}
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
