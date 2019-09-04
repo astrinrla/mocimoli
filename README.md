@@ -1,1 +1,1 @@
-**mocimoli.com**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/609c05ff-5279-4b8e-873c-8e0ef21bf5a0/deploy-status)](https://app.netlify.com/sites/mocimoli/deploys)
