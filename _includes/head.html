@@ -132,4 +132,7 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% endif %}
 
+  {% if page.recaptcha-widget %}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  {% endif %}
 </head>
